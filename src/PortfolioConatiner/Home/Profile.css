@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     color: aliceblue;
+    margin-left: 20%;
 }
 
 .profile-details-name{
