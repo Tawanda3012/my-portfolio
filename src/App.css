@@ -3,6 +3,11 @@
   padding:0;
   text-decoration: none;
 }
+body{
+  overflow-x: hidden;
+}
+
+
 .container{
   display:flex;
 }
@@ -51,3 +56,52 @@ main{
 .icon, .link_text{
   font-size: 23px;
 }
+
+.About {
+  margin-top: 100px;
+  font-family: "SemiBold";
+}
+
+
+.About .row{
+  justify-content: center;
+  align-items: center;
+}
+
+
+.About hr{
+  width: 60px;
+  background: 
+  #07011c;
+  height: 1vh;
+  margin-top: -3%;
+  margin-left: 16%;
+}
+
+.about-img{
+  box-shadow: 0 3px 0px 0px #01032c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 369px;
+    width: 399px;
+}
+
+  
+
+  .about-img img{
+    border-radius: 50%;
+    height: 339px;
+    width: 338px;
+  }
+
+  /* .lang-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+  } */
+
+  
