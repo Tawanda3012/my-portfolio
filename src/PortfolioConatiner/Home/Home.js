@@ -7,9 +7,7 @@ import Aboutme from '../AboutMe/Aboutme'
 
 
 
-function Home() {
-
-  
+function Home() { 
   return (
     <div className="home">
       <div className="home-container">
