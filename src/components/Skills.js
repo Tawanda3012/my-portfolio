@@ -11,6 +11,7 @@ function Skills() {
       <div className="row">
         <div className="col-md-4">
           <h2>My Skill set</h2>
+          <hr />
           <p>
             I provide value to your business by designing user interactions on
             websites, developing servers and databases for website functionality

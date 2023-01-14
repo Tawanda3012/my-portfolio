@@ -127,10 +127,19 @@ main{
 
 .skills h2{
   margin-top: 50%;
+  font-size: 80px;
 }
 
 .skills .row{
   margin-bottom: 5%;
+}
+
+.skills hr{
+  width: 194px;
+  background: white;
+  height: 1vh;
+  margin-top: -5%;
+  margin-left: 0%;
 }
 
 
