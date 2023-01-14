@@ -23,6 +23,9 @@ main{
   width: 200px;
   transition: all 0.5s;
   padding-top: 5%;
+  position: fixed;
+  background: blue;
+  left: 0px;
 }
 .top_section{
   display: flex;
@@ -64,6 +67,10 @@ main{
 }
 
 
+.About h2{
+  font-size: 80px;
+}
+
 .About .row{
   justify-content: center;
   align-items: center;
@@ -71,12 +78,11 @@ main{
 
 
 .About hr{
-  width: 60px;
-  background: 
-  #07011c;
+  width: 194px;
+  background: #01032c;
   height: 1vh;
-  margin-top: -3%;
-  margin-left: 16%;
+  margin-top: -5%;
+  margin-left: 0%;
 }
 
 .about-img{
@@ -89,6 +95,8 @@ main{
     width: 399px;
 }
 
+
+
   
 
   .about-img img{
@@ -97,12 +105,65 @@ main{
     width: 338px;
   }
 
-  /* .lang-img{
+  .lang-img{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 300px;
-  } */
+    margin-top: 10%;
+}
 
+
+/* .myskills{
+  background: #01012d
+} */
+
+.skills{
+  font-weight: 400px;
+  font-size: 20px;
+  margin-top: 10%;
+  color: white;
+  background: black;
+  position:relative;
+}
+
+.skills h2{
+  margin-top: 50%;
+}
+
+.skills .row{
+  margin-bottom: 5%;
+}
+
+
+
+.myskills{
+  margin-left: 10%;
+ 
+}
+
+.myskills p{
+  font-weight: 400px;
+  font-size: 28px;
+  color: white;
+}
+
+.myskills .row{
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.skills .footer-container{
+  position: absolute;
+  top: 83%;
+  width: 103%;
+  left: 0;
+}
+
+/* @media screen and (max-width:600px) {
+ h1{
+  background-color: red;
+ }
+  
+} */
   

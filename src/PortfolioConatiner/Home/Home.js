@@ -4,6 +4,7 @@ import Profile from "./Profile";
 import Sidebar from "../../components/Sidebar";
 import Footer from "./Footer/Footer";
 import Aboutme from '../AboutMe/Aboutme'
+import Skills from "../../components/Skills";
 
 
 
@@ -16,6 +17,8 @@ function Home() {
         <Footer />
       </div>
       <Aboutme/>
+      <Skills/>
+      <Footer />
     </div>
   );
 }

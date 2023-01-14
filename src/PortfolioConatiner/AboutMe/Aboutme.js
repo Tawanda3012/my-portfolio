@@ -7,7 +7,7 @@ import Vector2 from '../../assets/Home/Vector(2).png'
 import Vector3 from '../../assets/Home/Vector(3).png'
 
 
-//connet to postgresql? 
+
 
 
 function Aboutme() {
@@ -31,7 +31,7 @@ function Aboutme() {
           <img src={html5} className="img-fluid" alt="" />
           <img src={ Vector} className="img-fluid" alt="" />
           <img src={ Vector1} className="img-fluid" alt="" />
-          <img src={ Vector2} className="img-fluid" alt="" />
+          <img src={ Vector1} className="img-fluid" alt="" />
           <img src={ Vector3} className="img-fluid" alt="" />
           {/* <img src={ Wordpress} className="img-fluid" alt="" /> */}
           </div>

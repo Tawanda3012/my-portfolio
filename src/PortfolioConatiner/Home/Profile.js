@@ -1,6 +1,7 @@
 import React from "react";
 import Typical from "react-typical";
 import "./Profile.css";
+// import CV from '../../assets/tawanda.pdf'
 
 function Profile() {
   return (
@@ -56,12 +57,12 @@ function Profile() {
           </div>
 
           <div className="profile-options">
-            <button className="btn btn-primary">
+            <button className="btn btn-primary ">
               {""}
               Hire Me{""}
             </button>
-            <a href="/#" download="Tawanda Tawanda.pdf">
-              <button className="btn highlighted-btn">Get Resume</button>
+            <a href="../../assets/tawanda.pdf" download="tawanda.pdf">
+              <button className="btn  btn-primary highlighted-btn">Get Resume</button>
             </a>
           </div>
         </div>
