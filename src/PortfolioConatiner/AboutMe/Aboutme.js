@@ -7,7 +7,7 @@ import Vector2 from '../../assets/Home/Vector(2).png'
 import Vector3 from '../../assets/Home/Vector(3).png'
 
 
-//connet to postgresql? 
+
 
 
 function Aboutme() {
@@ -23,15 +23,13 @@ function Aboutme() {
           <h2>About Me</h2>
           <hr />
           <p>
-            I provide value to your business by designing user interactions on
-            websites, developing servers and databases for website functionality
-            and coding for mobile platforms.
+          Hello everyone! I am proud to present my web development projects, which showcase my skills and expertise in building dynamic and engaging websites. Whether you need a simple brochure website or a complex web application, I can provide you with a solution that meets your specific needs and requirements. I have experience in using the latest technologies and frameworks such as HTML, CSS, JavaScript, React, and Node.js to create fast, responsive, and user-friendly websites that provide an exceptional user experience. If you're looking for a talented and dedicated web developer, look no further. Contact me today to learn more about my projects and how I can help bring your vision to life
           </p>
           <div className="lang-img">
           <img src={html5} className="img-fluid" alt="" />
           <img src={ Vector} className="img-fluid" alt="" />
           <img src={ Vector1} className="img-fluid" alt="" />
-          <img src={ Vector2} className="img-fluid" alt="" />
+          <img src={ Vector1} className="img-fluid" alt="" />
           <img src={ Vector3} className="img-fluid" alt="" />
           {/* <img src={ Wordpress} className="img-fluid" alt="" /> */}
           </div>

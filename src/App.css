@@ -2,15 +2,47 @@
   margin:0;
   padding:0;
   text-decoration: none;
+  
 }
+
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../src/assets/fonts/Poppins-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Medium';
+  src: url('../src/assets/fonts/Poppins-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Regular';
+  src: url('../src/assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SemiBold';
+  src: url('../src/assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bold';
+  src: url('../src/assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+
+h1{
+  font-family:" Poppins Bold";
+}
+
+
 body{
   overflow-x: hidden;
+
 }
 
 
-.container{
+
+/* .container{
   display:flex;
-}
+} */
 main{
   width: 100%;
   padding: 20px;
@@ -23,6 +55,9 @@ main{
   width: 200px;
   transition: all 0.5s;
   padding-top: 5%;
+  position: fixed;
+  background: blue;
+  left: 0px;
 }
 .top_section{
   display: flex;
@@ -64,19 +99,27 @@ main{
 }
 
 
+.About h2{
+  font-size: 80px;
+  font-family: "SemiBold";
+}
+
 .About .row{
   justify-content: center;
   align-items: center;
 }
 
+.About p{
+  font-family: 'MyFont';
+}
+
 
 .About hr{
-  width: 60px;
-  background: 
-  #07011c;
+  width: 194px;
+  background: #01032c;
   height: 1vh;
-  margin-top: -3%;
-  margin-left: 16%;
+  margin-top: -5%;
+  margin-left: 0%;
 }
 
 .about-img{
@@ -89,6 +132,8 @@ main{
     width: 399px;
 }
 
+
+
   
 
   .about-img img{
@@ -97,12 +142,133 @@ main{
     width: 338px;
   }
 
-  /* .lang-img{
+  .lang-img{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 300px;
-  } */
+    margin-top: 10%;
+}
 
+
+/* .myskills{
+  background: #01012d
+} */
+
+.skills{
+  font-weight: 400px;
+  font-size: 20px;
+  margin-top: 10%;
+  color: white;
+  background: black;
+  position:relative;
+}
+
+.skills h2{
+  margin-top: 50%;
+  font-size: 80px;
+}
+
+.skills .row{
+  margin-bottom: 5%;
+}
+
+.skills hr{
+  width: 194px;
+  background: white;
+  height: 1vh;
+  margin-top: -5%;
+  margin-left: 0%;
+}
+
+
+
+.myskills{
+  margin-left: 10%;
+ 
+}
+
+.myskills p{
+  font-weight: 400px;
+  font-size: 28px;
+  color: white;
+}
+
+.myskills .row{
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.skills .footer-container{
+  position: absolute;
+  top: 83%;
+  width: 103%;
+  left: 0;
+}
+
+.skills p{
+  font-family: 'MyFont';
+  
+}
+
+
+.pros h2{
+
+  margin-bottom: 30px;
+}
+
+
+.pros p {
+  font-family: 'MyFont';
+
+  margin-bottom: 40px;
+}
+
+.prods{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.pros h2{
+  font-family: "SemiBold";
+  font-size: 60px;
+}
+
+.pro-text{
+  margin-top: 40px;
+}
+
+.pro-text h2{
+  text-align: inherit;
+}
+
+.pro-text p {
+  text-align: inherit;
+}
+
+.pros-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.pros button{
+  font-family: "Medium";
+  border: none;
+  padding: 10px;
+  background: rgb(0 0 16);
+  color: white;
+  height: 50px;
+  text-align: center;
+}
+
+
+/* @media screen and (max-width:600px) {
+ h1{
+  background-color: red;
+ }
+  
+} */
   

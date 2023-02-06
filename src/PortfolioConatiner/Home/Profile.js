@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Typical from "react-typical";
 import "./Profile.css";
+// import CV from '../../assets/tawanda.pdf'
 
 function Profile() {
+
+
+  const [pdfUrl, setPdfUrl] = useState("https://example.com/sample.pdf");
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "sample.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+
   return (
     <div className="profile-container">
       <div className="profile-parent">
@@ -56,13 +71,13 @@ function Profile() {
           </div>
 
           <div className="profile-options">
-            <button className="btn btn-primary">
+            <button className="btn btn-primary ">
               {""}
               Hire Me{""}
             </button>
-            <a href="/#" download="Tawanda Tawanda.pdf">
-              <button className="btn highlighted-btn">Get Resume</button>
-            </a>
+            
+              <button onClick={handleDownload} className="btn  btn-primary highlighted-btn">Get Resume</button>
+          
           </div>
         </div>
         <div className="profile-picture">

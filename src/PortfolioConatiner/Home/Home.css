@@ -3,6 +3,23 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 550px;
-    background-image: url(../../assets/Home/bg.jpg);
+    background-image: url(../../assets/Home/bg.jpg)!important;
     padding-top: 5%;
+}
+
+
+.first-button {
+    position: absolute;
+    right: -5%;
+    top: 18%;
+    transform: rotate(270deg);
+    transform-origin: left top;
+    
+}  
+
+
+
+.second-button button{
+    transform: rotate(270deg);
+    transform-origin: left top
 }
