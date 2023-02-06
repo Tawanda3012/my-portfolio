@@ -6,6 +6,7 @@ import Footer from "./Footer/Footer";
 import Aboutme from "../AboutMe/Aboutme";
 import Skills from "../../components/Skills";
 import Projects from "../../components/Projects"
+import Contact from "../ContactMe/Contact";
 
 function Home() {
   const pageRef = useRef(null);
@@ -37,6 +38,7 @@ function Home() {
       <Aboutme />
       <Skills />
       <Projects/>
+      <Contact/>
       <Footer />
       <div ref={pageRef} className="second-button" >
         <button onClick={scrollToTop}>Scroll to Top</button>

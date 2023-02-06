@@ -265,6 +265,66 @@ main{
 }
 
 
+.con{
+  background-image: url(../src/assets/Home/bg.jpg)!important;
+  height: 85vh;
+  padding: 30px;
+  position: relative;
+}
+
+.contact{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.contact h3{
+  font-family: "SemiBold";
+  font-size: 60px;
+}
+
+.contact p{
+  font-family: "MyFont";
+  font-size: 25px;
+}
+
+.con-text{
+  color: white;
+  text-align: initial;
+
+}
+
+.con-text p{
+  font-family: "SemiBold";
+}
+.con-icon{
+  color: white;
+  text-align: initial;
+  margin-left: -3%;
+}
+
+.con-icon i {
+  margin: 0 20px;
+}
+
+
+.con .footer-container{
+  position: absolute;
+  top: 80%;
+  width: 103%;
+  left: 0;
+}
+
+.con-img{
+  color: white;
+  text-align: initial;
+  margin-top: 10%;
+  font-family: "SemiBold";
+  width: 400px;
+}
+
+.con-img p{
+font-family: "MyFont";
+}
 /* @media screen and (max-width:600px) {
  h1{
   background-color: red;
