@@ -16,7 +16,9 @@ const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
+// Define a function to scroll the window to the bottom smoothly
 const scrollToBottom = () => {
+  // Scroll the window to the specified position (bottom) with smooth behavior
   window.scrollTo({ top: 10000, behavior: "smooth" });
 };
 
