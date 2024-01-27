@@ -1,0 +1,39 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: #24263B;
+   padding: 50px 0;
+   margin-top: 5%;
+  }
+  
+  .contact-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin: 10px 0; /* Add space top and bottom */
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    margin-top: 10px; /* Add space between the textarea and the button */
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end; /* Align button to the right */
+  }
+  

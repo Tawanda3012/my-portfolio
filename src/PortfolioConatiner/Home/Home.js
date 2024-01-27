@@ -8,6 +8,7 @@ import Footer from "./Footer/Footer";
 import Aboutme from "../AboutMe/Aboutme";
 import Skills from "../../components/Skills";
 import Projects from "../../components/Projects";
+import ContactForm from "../ContactMe/Contact";
 
 function Home() {
   const pageRef = useRef(null);
@@ -38,7 +39,8 @@ const scrollToBottom = () => {
       <Aboutme />
       <Skills />
       <Projects />
-      <Footer />
+      <ContactForm/>
+    
       <div ref={pageRef} className="second-button">
       <button onClick={scrollToTop}>
              <FaArrowUp />{" "}
