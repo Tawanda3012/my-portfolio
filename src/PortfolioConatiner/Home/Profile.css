@@ -106,3 +106,55 @@
 .colz .colz-icon i:hover{
   transform: scale(1.5);
 }
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+    .profile-container {
+        height: 20%; /* Adjust the height for smaller screens */
+    }
+
+    .profile-details {
+        flex-direction: column; /* Stack profile details vertically on smaller screens */
+        align-items: center; /* Center align profile details on smaller screens */
+    }
+
+    .profile-parent {
+        margin-left: 0; /* Remove left margin for smaller screens */
+        text-align: center; /* Center align profile parent on smaller screens */
+    }
+
+    .profile-details-role {
+        width: auto; /* Adjust width for smaller screens */
+    }
+
+  
+}
+
+/* Hide the profile picture on mobile phones */
+@media (max-width: 767px) {
+    .profile-picture {
+        display: none;
+    }
+}
+
+/* Display the profile picture on iPad to desktop */
+@media (min-width: 768px) {
+    .profile-picture {
+        display: flex;
+    }
+}
+
+/* Adjust styles for mobile phones */
+@media (max-width: 767px) {
+    .profile-role-tagline {
+      font-size: 16px; /* Adjust the font size for better display on mobile phones */
+    }
+  }
+  
+  /* Adjust styles for iPad */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .profile-role-tagline {
+      font-size: 18px; /* Adjust the font size for better display on iPad */
+    }
+  }
+  

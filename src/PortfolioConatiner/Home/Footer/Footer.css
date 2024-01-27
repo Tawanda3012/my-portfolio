@@ -18,3 +18,9 @@
     height: 130px;
     
 }
+
+@media (max-width: 767px) {
+    .footer-parent img{
+        display: none;
+    }
+}

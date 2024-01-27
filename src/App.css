@@ -47,18 +47,18 @@ main{
   width: 100%;
   padding: 20px;
 }
-.sidebar{
-  /* background: #000; */
-  color: #fff;
-  position: absolute;
-  top: 0px;
+/* Default styles for non-mobile devices */
+.sidebar {
   width: 200px;
-  transition: all 0.5s;
-  padding-top: 5%;
   position: fixed;
+  top: 0;
+  left: 0;
   background: blue;
-  left: 0px;
+  color: #fff;
+  padding-top: 5%;
+  z-index: 1000; /* Ensure the navigation is on top of everything */
 }
+
 .top_section{
   display: flex;
   align-items:center;
@@ -265,10 +265,96 @@ main{
 }
 
 
-/* @media screen and (max-width:600px) {
- h1{
-  background-color: red;
- }
+
+
+/* Adjust styles for mobile phones */
+@media (max-width: 767px) {
+
+  .sidebar{
+    position: absolute;
+    height: 94px;
+   
+  }
+  .icon, .link_text{display: none;}
+
+  .skills hr {
+    width: 213px; /* Adjust the width of hr for better display on mobile phones */
+    margin-top: -3%; /* Adjust the top margin for better positioning on mobile phones */
+    margin-left: 23%; /* Adjust the left margin for better positioning on mobile phones */
+  }
+  .About p{
+    font-size: 16px;
+  }
+
+  .about-img{
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .lang-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0; /* Adjust the margin for better spacing on mobile phones */
+  }
+
+  .lang-img img {
+    width: 45%; /* Limit the width of the images to a percentage for better display on mobile phones */
+    height: auto; /* Maintain the aspect ratio of the images */
+    margin: 5px; /* Add margin to create space between the images on mobile phones */
+  }
+
+  .prods{
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pro-text{
+    text-align: center;
+    font-size: 16px;
+  }
+  .pros{
+    margin-top: 80px;
+  }
+}
+
   
-} */
-  
+
+/* Adjust styles for mobile phones and iPads */
+@media (max-width: 1024px) {
+ 
+  .skills {
+    text-align: center; /* Center align the skills section on mobile phones and iPads */
+    padding: 5%; /* Add padding for better spacing on mobile phones and iPads */
+  }
+
+  .skills h2 {
+    font-size: 40px; /* Decrease the font size of h2 for better display on mobile phones and iPads */
+    margin-top: 20px; /* Adjust the top margin for better spacing on mobile phones and iPads */
+  }
+
+  .skills .row {
+    margin-bottom: 3%; /* Adjust the margin bottom for better spacing on mobile phones and iPads */
+  }
+
+ 
+  .myskills {
+    margin-left: 0; /* Remove left margin for better alignment on mobile phones and iPads */
+  }
+
+  .myskills p {
+    font-size: 20px; /* Adjust the font size of p for better display on mobile phones and iPads */
+  }
+
+  .skills .footer-container {
+    position: static; /* Change position to static for better display on mobile phones and iPads */
+    width: auto; /* Adjust width for better display on mobile phones and iPads */
+    margin-top: 20px; /* Adjust top margin for better spacing on mobile phones and iPads */
+  }
+
+  /* Add padding to each column for space from top to bottom */
+  .myskills .col {
+    padding: 20px 0; /* Adjust the padding as needed for space from top to bottom */
+  }
+}

@@ -10,16 +10,67 @@
 
 .first-button {
     position: absolute;
-    right: -5%;
-    top: 18%;
+    right: 2%;
+    top: 38%;
     transform: rotate(270deg);
     transform-origin: left top;
+    top: 59%;
     
 }  
 
-
-
-.second-button button{
-    transform: rotate(270deg);
-    transform-origin: left top
+/* Style for scroll-to-top button */
+/* Style for scroll-to-top button */
+.first-button button {
+    position: fixed; /* Fixed position to keep the button in view */
+    bottom: 20px; /* Adjust the distance from the bottom of the viewport */
+    left: 0px; /* Adjust the distance from the right of the viewport */
+    background-color: #0000FF; /* Set a background color for the button */
+    color: #fff; /* Set text color for better visibility */
+    border: none; /* Remove border for a cleaner look */
+    padding: 10px; /* Set padding to create a circular button */
+    font-size: 16px; /* Adjust the font size for better visibility */
+    cursor: pointer; /* Change cursor to pointer on hover for better affordance */
+    border-radius: 50%; /* Make the button circular */
+    transform: translate(-50%, -50%) rotate(89deg); /* Rotate the square to form an arrow */
+    height: 35px;
+    display: flex;
 }
+
+.second-button button {
+    position: fixed; /* Fixed position to keep the button in view */
+    bottom: 20px; /* Adjust the distance from the bottom of the viewport */
+    left: 30px; /* Adjust the distance from the right of the viewport */
+    background-color: #0000FF; /* Set a background color for the button */
+    color: #fff; /* Set text color for better visibility */
+    border: none; /* Remove border for a cleaner look */
+    padding: 10px; /* Set padding to create a circular button */
+    font-size: 16px; /* Adjust the font size for better visibility */
+    cursor: pointer; /* Change cursor to pointer on hover for better affordance */
+    border-radius: 50%; /* Make the button circular */
+    transform: translate(-50%, -50%) rotate(-3deg); /* Rotate the square to form an arrow */
+    height: 35px;
+    display: flex;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .home-container {
+        min-height: 400px; /* Adjust the height for smaller screens */
+        padding-top: 3%; /* Adjust the padding for smaller screens */
+    }
+    
+    .first-button {
+       display: none;
+    }
+    
+    .second-button button {
+      display: none;
+    }
+}
+
+
+
+
