@@ -9,6 +9,7 @@ import Aboutme from "../AboutMe/Aboutme";
 import Skills from "../../components/Skills";
 import Projects from "../../components/Projects";
 import ContactForm from "../ContactMe/Contact";
+import Futa from "./Futa"
 
 function Home() {
   const pageRef = useRef(null);
@@ -40,6 +41,7 @@ const scrollToBottom = () => {
       <Skills />
       <Projects />
       <ContactForm/>
+      <Futa/>
     
       <div ref={pageRef} className="second-button">
       <button onClick={scrollToTop}>

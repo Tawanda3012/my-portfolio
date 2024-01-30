@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Typical from "react-typical";
 import "./Profile.css";
+
 // import CV from '../../assets/tawanda.pdf'
 
 
@@ -9,6 +10,10 @@ import "./Profile.css";
 function Profile() {
   // Initialize pdfUrl state with default value
   const [pdfUrl, setPdfUrl] = useState("https://example.com/sample.pdf");
+
+  const scrollToContact = () => {
+    document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' }); // Scroll to the ContactForm section
+  };
 
   // Define handleDownload function to handle the download action
   const handleDownload = () => {
@@ -72,10 +77,11 @@ function Profile() {
 
           <div className="profile-options">
             {/* Render the "Hire Me" button */}
-            <button className="btn btn-primary">Hire Me</button>
+            <button className="btn btn-primary" onClick={scrollToContact}>Hire Me</button>
             {/* Render the "Get Resume" button with handleDownload function on click */}
             <button onClick={handleDownload} className="btn  btn-primary highlighted-btn">Get Resume</button>
           </div>
+         
         </div>
         {/* Render the profile picture */}
         <div className="profile-picture">
